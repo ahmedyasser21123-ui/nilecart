@@ -22,7 +22,7 @@ Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
 
 Route::get('/about', fn() => view('about'))->name('about');
 Route::get('/contact', fn() => view('contact'))->name('contact');
-Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
+// Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
 
 
 Route::prefix('admin')->group(function () {
